@@ -9,4 +9,4 @@
 
 
 ## Develop
-`sass --watch src/scss/style.scss style.css`# project-3-3-school-2022ny
+`sass --watch src/scss/style.scss style.css`
