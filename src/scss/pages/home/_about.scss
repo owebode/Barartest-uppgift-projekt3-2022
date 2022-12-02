@@ -1,0 +1,41 @@
+.about {
+    height: 100vh;
+    display: grid;
+    padding: 32px; // Temp
+
+    &__inner {
+        background-color: rgb(1, 8, 8); 
+        display: grid;
+        grid-template-rows: 1fr 1fr 80px;
+        grid-template-areas: 
+        'about-image'
+        'about-main'
+        'about-footer';
+        justify-content: center;
+    }
+
+    &__image {
+        grid-area: about-image;
+    }
+
+    &__main {
+        grid-area: about-main;
+    }
+
+    &__footer {
+        grid-area: about-footer;
+        padding: 0 var(--gap-m); // Temp
+    }
+
+    &__content {
+        width: 50vw; // Temp
+        //width: 100%;
+        min-height: 40vh; // Temp
+        height: 100%;
+        background-color: var(--color-light);
+    }
+
+    &__box  {
+
+    }
+}

@@ -357,7 +357,7 @@ li {
   fill: var(--color-accent);
 }
 .hero__social {
-  position: absolute;
+  position: fixed;
   right: var(--gap-m);
   top: 40%;
   transform: rotate(-90deg) translateX(50%);
@@ -448,6 +448,35 @@ li {
 }
 .social__link {
   color: var(--color-light);
+}
+
+.about {
+  height: 100vh;
+  display: grid;
+  padding: 32px;
+}
+.about__inner {
+  background-color: rgb(1, 8, 8);
+  display: grid;
+  grid-template-rows: 1fr 1fr 80px;
+  grid-template-areas: "about-image" "about-main" "about-footer";
+  justify-content: center;
+}
+.about__image {
+  grid-area: about-image;
+}
+.about__main {
+  grid-area: about-main;
+}
+.about__footer {
+  grid-area: about-footer;
+  padding: 0 var(--gap-m);
+}
+.about__content {
+  width: 50vw;
+  min-height: 40vh;
+  height: 100%;
+  background-color: var(--color-light);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -121,7 +121,8 @@
     }
 
     &__social {
-        position: absolute;
+        //position: absolute;
+        position: fixed;  // Jag har ändrat till fixed
         right: var(--gap-m);
         top: 40%;
         transform: rotate(-90deg) translateX(50%);
